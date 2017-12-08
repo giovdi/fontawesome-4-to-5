@@ -1,10 +1,10 @@
 # FontAwesome 4 to 5
-**A small Python tool to convert icons in files from FontAwesome 4 to 5**  
+**A small Python tool to migrate from FontAwesome 4 to 5**  
 **This may be unstable. We strongly suggest a full backup before proceed.**
 
 FontAwesome 4 to 5 is brought to you by Giovdi by Pixelstyle.it.
 
-A FontAwesome 3 to 4 converter is also available at [https://github.com/giovdi/fontawesome-3-to-4](https://github.com/giovdi/fontawesome-3-to-4)
+A FontAwesome 3 to 4 version is also available at [https://github.com/giovdi/fontawesome-3-to-4](https://github.com/giovdi/fontawesome-3-to-4)
 
 ## Notes
 
