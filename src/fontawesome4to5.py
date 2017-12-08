@@ -4,7 +4,7 @@ from __builtin__ import staticmethod
 
 class FontAwesome4To5:
     # the following search and replace is executed after the fa > fas replace
-    # watch out to fa-euro!
+    # remove fa-euro!
     FA_ICONS = {
         "fas fa-glass": "fas fa-glass-martini",
         "fas fa-meetup": "fab fa-meetup",
@@ -141,8 +141,6 @@ class FontAwesome4To5:
         "fas fa-toggle-up": "far fa-caret-square-up",
         "fas fa-caret-square-o-right": "far fa-caret-square-right",
         "fas fa-toggle-right": "far fa-caret-square-right",
-        "fas fa-eur": "fas fa-euro", #replace moved to next line
-        "fas fa-euro": "fas fa-euro-sign",
         "fas fa-gbp": "fas fa-pound-sign",
         "fas fa-usd": "fas fa-dollar-sign",
         "fas fa-dollar": "fas fa-dollar-sign",
@@ -508,6 +506,10 @@ class FontAwesome4To5:
             content = content.replace('fa fa-', 'fas fa-')
             for attribute, value in FontAwesome4To5.FA_ICONS.iteritems():
                 content = content.replace(attribute, value)
+
+            # special replacements
+            content = content.replace('fa-euro', 'fa-eur')
+            content = content.replace('fa-eur', 'fa-euro-sign')
             
             # manual review
             for value in FontAwesome4To5.FA_MANUAL_REVIEW:
