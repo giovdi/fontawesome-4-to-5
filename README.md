@@ -4,6 +4,8 @@
 
 FontAwesome 4 to 5 is brought to you by Giovdi by Pixelstyle.it.
 
+A FontAwesome 3 to 4 converter is also available at [https://github.com/giovdi/fontawesome-3-to-4](https://github.com/giovdi/fontawesome-3-to-4)
+
 ## Notes
 
 * **This converter works only if the `fa` class is IMMEDIATELY followed by an icon class (e.g. `fa fa-ok`).**  
