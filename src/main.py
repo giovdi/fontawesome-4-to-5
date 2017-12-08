@@ -1,4 +1,4 @@
-from fontawesome4To5 import FontAwesome4To5
+from fontawesome4to5 import FontAwesome4To5
 
 # For Windows users
 FontAwesome4To5.pathCheck("C:/path/to/folder", True)

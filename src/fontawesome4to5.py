@@ -76,8 +76,8 @@ class FontAwesome4To5:
         'fas fa-eercast': 'fab fa-sellcast',
         'fas fa-envelope-o': 'far fa-envelope',
         'fas fa-envelope-open-o': 'far fa-envelope-open',
+        'fas fa-euro': 'fas fa-eur',    #replace on next rule
         'fas fa-eur': 'fas fa-euro-sign',
-        'fas fa-euro': 'fas fa-euro-sign',
         'fas fa-exchange': 'fas fa-exchange-alt',
         'fas fa-external-link-square': 'fas fa-external-link-square-alt',
         'fas fa-external-link': 'fas fa-external-link-alt',
@@ -331,7 +331,7 @@ class FontAwesome4To5:
                 content = content.replace(attribute, value)
             
             # manual review
-            for value in FontAwesome4To5.FA_MANUAL_REVIEW.iteritems():
+            for value in FontAwesome4To5.FA_MANUAL_REVIEW:
                 stackCount = content.count(value)
                 if (stackCount > 0):
                     print str(stackCount)+" "+value+" in "+fullpath
